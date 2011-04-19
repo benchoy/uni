@@ -1,0 +1,303 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**
+ *
+ * NUTS R US Styles By Ben Choy
+ *
+ **/
+ 
+/*****************************************************
+ FOUNDATIONS
+*****************************************************/
+body {
+  padding-top: 20px;
+  background: #fff;
+  color: #646464;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+#wrapper {
+  margin: 0 auto; /* Center the container */
+  text-align: left;
+  width: 930px;
+}
+
+/*****************************************************
+ HEADER
+*****************************************************/
+
+#logo a {
+  display: block;
+  text-indent: -999em;
+  height: 47px; width: 146px;
+  background: url('../images/logo.gif') no-repeat;
+}
+
+#main-nav ul {
+  background: url("../images/top-menu-bg.gif") left no-repeat;
+  height: 37px;
+  margin: 15px 0 15px;
+  padding: 6px;
+  width: 918px;
+}
+#main-nav li {
+  border-right: 1px solid #DDDDDD;
+  float: left;
+  height: 37px;
+}
+#main-nav li a {
+  color: #646464;
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 37px;
+  line-height: 37px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+#main-nav li a:hover { background: #FDFCF6; }
+
+
+/*****************************************************
+ CONTAINER
+*****************************************************/
+#container {
+  background: none #EEEEEE;
+  padding: 5px;
+}
+#container .inside {
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+
+/*****************************************************
+ CONTENT
+*****************************************************/
+#content {
+  float: right;
+  padding: 0 19px 0 10px;
+  width: 690px;
+}
+
+#content h1 {
+	font-size: 22px;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	margin: 20px 0 10px;
+}
+
+#content table {
+	border-top: 1px solid #ddd;
+}
+
+#content table tr td,
+#content table tr th  {
+	background: #f6f6f6;
+	padding: 5px 10px;
+	height: 29px;
+	line-height: 1.2em;
+	border-bottom: 1px solid #ddd;
+}
+
+#content table tr th {
+  padding-top: 7px;
+  color: #646464;
+  background: #EEEEEE;
+}
+
+#content table tr.odd td {
+	background: #fbfbfb;
+}
+
+#content table tr:hover td { background: #fdfcf6; }
+
+#content table .action {
+	text-align: right;
+	padding: 0 20px 0 10px;
+}
+
+#content table tr .actions a { margin: 0 0 0 10px; text-decoration: none; color: #9b9b9b; }
+#content table tr:hover .actions .edit a { color: #c5a059; }
+#content table tr:hover .actions .delete a { color: #a02b2b; }
+#content table tr:hover .actions .view  a { color: #55a34a; }
+
+#content table tr:hover .actions a:hover { text-decoration: underline; }
+
+#content table tr .actions span a {
+  float: left;
+  display: block; 
+  overflow: hidden;
+  text-indent: -999em;
+  height: 16px; width: 16px;
+}
+
+#content fieldset {
+	border: 1px solid #ddd;
+	padding: 19px;
+	margin: 0 0 20px 0;
+	background: #fbfbfb;
+}
+
+#content fieldset.buttons {
+  padding: 0;
+  background: none;
+  border: 0;
+}
+
+#content p { margin: 0 0 14px 0; }
+
+#content fieldset p { margin: 0 0 14px 0; float: left; width: 100%;  }
+
+#content fieldset label {
+	display: block;
+	width: 100%;
+	margin: 0 0 7px 0;
+	line-height: 12px;
+}
+
+#content .check label { display: inline; }
+#content .check input { width: auto; }
+
+#content form.event fieldset ol li.boolean label { padding-left:0; width:auto; }
+#content form.event fieldset ol li.boolean label input { margin:0 0.5em 0 0.2em; }
+
+
+#content fieldset .text-long {
+	border: 1px solid #ddd;
+	background: #fff url(../images/input-shaddow.gif) no-repeat left top;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #646464;
+	padding: 5px 7px;
+	width: 264px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#content fieldset .text-medium {
+	border: 1px solid #ddd;
+	background: #fff url(../images/input-shaddow.gif) no-repeat left top;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #646464;
+	padding: 5px 7px;
+	width: 124px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#content fieldset .text-small {
+	border: 1px solid #ddd;
+	background: #fff url(../images/input-shaddow.gif) no-repeat left top;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #646464;
+	padding: 5px 7px;
+	width: 44px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#content fieldset .text-long:focus, 
+#content fieldset .text-medium:focus,
+#content fieldset .text-small:focus,
+#content fieldset textarea:focus { background: #fdfcf6 url(../images/input-shaddow-hover.gif) no-repeat left top; }
+
+#content fieldset select {
+  border: 1px solid #ddd;
+	margin: 0 10px 0 0;
+  font: 12px Arial, Helvetica, sans-serif;
+  background: #fff url(../images/input-shaddow.gif) no-repeat left top;
+}
+#content fieldset textarea {
+	border: 1px solid #ddd;
+	background: #fff url(../images/input-shaddow.gif) no-repeat left top;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #646464;
+	padding: 5px 7px;
+	width: 364px;
+	float: left;
+	margin: 0 10px 0 0;
+	height: 148px;
+	overflow: hidden;
+}
+
+#content form.event .string input { width: 626px; padding: 5px;}
+#content form.event textarea { width: 625px }
+#content form.event select { padding: 2px; }
+#content form.event select[multiple="multiple"] {
+  height: 150px; padding: 5px; width: 635px; 
+}
+
+#content .button,
+#content .button-submit {
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #646464;
+	width: 94px;
+	height: 29px;
+	cursor: pointer;
+	border: none;
+	background: url(../images/button-submit.gif) no-repeat left top;
+}
+
+
+
+/*****************************************************
+ SIDEBAR
+*****************************************************/
+#sidebar {
+}
+
+
+/*****************************************************
+ FOOTER
+*****************************************************/
+#footer {
+  color: #9B9B9B;
+  font-size: 11px;
+  line-height: 11px;
+  margin: 10px 0 30px;
+  padding: 0 0 0 5px;
+  text-align: right;
+}
