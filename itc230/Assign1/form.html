@@ -12,12 +12,13 @@
     <div id="wrapper">
       
       <div id="header">
-        <div id="logo"><a href="index.html">SITE NAME</a></div>
+        <div id="logo"><a href="index.html">Nuts R Us</a></div>
         <div id="main-nav">
           <ul>
-            <li><a href="link-1.html">LINK 1</a></li>
-            <li><a href="link-1.html">LINK 2</a></li>
-            <li><a href="link-1.html">LINK 3</a></li>          
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="form.html">Order Form</a></li>
+            <li><a href="contact.html">Contact Us</a></li>          
           </ul>
         </div>
       </div>
@@ -51,8 +52,36 @@
                     <td><input id="phone" name="phone" value="" /></td>
                   </tr>
                   <tr>
-                    <th><label for="address">Address</label></th>
-                    <td><input id="address" name="address" value="" /></td>
+                    <th><label for="street_address">Address</label></th>
+                    <td>
+                      <div class="group">
+                        <div class="set street_address">
+                          <input id="street_address" name="street_address" value="" />
+                          <label for="street_address">Street Address</label>
+                        </div>
+                        <div class="set suburb">
+                          <input id="suburb" name="suburb" value="" />
+                          <label for="suburb">Suburb</label>
+                        </div>
+                        <div class="set state">
+                          <select id="state" name="state">
+                            <option value="">Select State</option>
+                            <option value="NSW">New South Wales</option>
+                            <option value="ACT">Australian Capital Territory</option>
+                            <option value="VIC">Victoria</option>
+                            <option value="QLD">Queensland</option>
+                            <option value="SA">South Australia</option>
+                            <option value="WA">Western Australia</option>
+                            <option value="NT">Northern Territory</option>
+                          </select>
+                          <label for="state">State</label>
+                        </div>
+                        <div class="set postcode">
+                          <input id="postcode" name="postcode" value="" />
+                          <label for="postcode">Postcode</label>
+                        </div>
+                      </div>
+                    </td>
                   </tr>
                 </table>
                 
@@ -60,6 +89,61 @@
               
               <fieldset>
                 <legend>Order Details</legend>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Item</th>
+                      <th>Product Code</th>
+                      <th>Diameter</th>
+                      <th>Length</th>
+                      <th>Colour</th>
+                      <th>Unit Price</th>
+                      <th>Quantity</th>
+                      <th>Row Total</th>
+                      <th>Total Cost</th>
+                    </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                    <td>Bolt</td>
+                    <td>B113</td>
+                    <td>9</td>
+                    <td>50</td>
+                    <td>Black</td>
+                    <td>2.15</td>
+                    <td><input id="quantity" name="qauntity" value="" /></td>
+                    <td>0</td>
+                    <td>0</td>
+                   </tr>
+                 </tbody>
+                 <tbody>
+                  <tr>
+                    <td>Nut</td>
+                    <td>N234</td>
+                    <td>5</td>
+                    <td>N/A</td>
+                    <td>Silver</td>
+                    <td>0.45</td>
+                    <td><input id="quantity" name="qauntity" value="" /></td>
+                    <td>0</td>
+                    <td>0</td>
+                   </tr>
+                 </tbody>
+                 <tbody>
+                  <tr>
+                    <td>Washer</td>
+                    <td>W359</td>
+                    <td>8</td>
+                    <td>N/A</td>
+                    <td>Silver</td>
+                    <td>0.30</td>
+                    <td><input id="quantity" name="qauntity" value="" /></td>
+                    <td>0</td>
+                    <td>0</td>
+                   </tr>
+                 </tbody>
+                 
+  </table>
               </fieldset>        
           
             </form>

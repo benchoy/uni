@@ -175,6 +175,9 @@ body {
   height: 16px; width: 16px;
 }
 
+#content form table th,
+#content form table td { vertical-align: top }
+
 #content fieldset {
 	border: 1px solid #ddd;
 	padding: 19px;
@@ -261,6 +264,18 @@ body {
 	margin: 0 10px 0 0;
 	height: 148px;
 	overflow: hidden;
+}
+
+#content form .group {
+  display: block;
+  width: 200px;
+}
+#content form .group set {
+  float: left;
+  overflow: hidden;
+}
+#content form .group odd {
+  clear: left;
 }
 
 #content form.event .string input { width: 626px; padding: 5px;}
