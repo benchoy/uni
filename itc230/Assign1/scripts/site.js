@@ -80,7 +80,7 @@ function updateTotals() {
       item_price = parseFloat(document.getElementById(dom_id).innerHTML);
       field_total = roundNumber(parseInt(val)*item_price, 2);
       grand_total = field_total+grand_total;
-      document.getElementById(dom_id2).innerHTML="$"+field_total;
+      document.getElementById(dom_id2).innerHTML=("$"+field_total).replace("NaN", "0");
     }
   }
   
@@ -89,7 +89,7 @@ function updateTotals() {
     //alert(errmsg);
     document.getElementById("grand_total").innerHTML="You must enter whole numbers";
   } else {
-    document.getElementById("grand_total").innerHTML="$"+roundNumber(grand_total, 2);
+    document.getElementById("grand_total").innerHTML=("$"+roundNumber(grand_total, 2)).replace("NaN", "0");
   }
   
 }
