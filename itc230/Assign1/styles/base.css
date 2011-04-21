@@ -118,16 +118,23 @@ body {
  CONTENT
 *****************************************************/
 #content {
-  float: right;
-  padding: 0 19px 0 10px;
+  float: left;
+  padding: 0 19px 0 19px;
   width: 690px;
 }
 
 #content h1 {
-	font-size: 22px;
+	font-size: 26px;
 	font-weight: bold;
-	padding: 0 0 0 10px;
-	margin: 20px 0 10px;
+	padding: 0 0 0;
+	margin: 20px 0 20px;
+}
+
+#content h2 {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0 0 0;
+	margin: 20px 0 20px;
 }
 
 #content table {
@@ -199,14 +206,12 @@ body {
 	display: block;
 	width: 100%;
 	margin: 0 0 7px 0;
+	padding-top: 5px;
 	line-height: 12px;
 }
 
 #content .check label { display: inline; }
 #content .check input { width: auto; }
-
-#content form.event fieldset ol li.boolean label { padding-left:0; width:auto; }
-#content form.event fieldset ol li.boolean label input { margin:0 0.5em 0 0.2em; }
 
 
 #content fieldset .text-long {
@@ -214,7 +219,7 @@ body {
 	background: #fff url(../images/input-shaddow.gif) no-repeat left top;
 	font: 11px Arial, Helvetica, sans-serif;
 	color: #646464;
-	padding: 5px 7px;
+	padding: 3px 7px;
 	width: 264px;
 	float: left;
 	margin: 0 10px 0 0;
@@ -225,8 +230,8 @@ body {
 	background: #fff url(../images/input-shaddow.gif) no-repeat left top;
 	font: 11px Arial, Helvetica, sans-serif;
 	color: #646464;
-	padding: 5px 7px;
-	width: 124px;
+	padding: 3px 7px;
+	width: 154px;
 	float: left;
 	margin: 0 10px 0 0;
 }
@@ -236,10 +241,14 @@ body {
 	background: #fff url(../images/input-shaddow.gif) no-repeat left top;
 	font: 11px Arial, Helvetica, sans-serif;
 	color: #646464;
-	padding: 5px 7px;
+	padding: 3px 7px;
 	width: 44px;
 	float: left;
 	margin: 0 10px 0 0;
+}
+
+#content fieldset select.text-small {
+  width: 65px;
 }
 
 #content fieldset .text-long:focus, 
@@ -268,23 +277,19 @@ body {
 
 #content form .group {
   display: block;
-  width: 200px;
 }
-#content form .group set {
+#content form .group .set {
   float: left;
   overflow: hidden;
 }
-#content form .group odd {
+#content form .group .odd {
   clear: left;
 }
 
-#content form.event .string input { width: 626px; padding: 5px;}
-#content form.event textarea { width: 625px }
-#content form.event select { padding: 2px; }
-#content form.event select[multiple="multiple"] {
-  height: 150px; padding: 5px; width: 635px; 
-}
 
+#content .submit {
+  float: right;
+}
 #content .button,
 #content .button-submit {
 	font: 11px Arial, Helvetica, sans-serif;
@@ -313,6 +318,14 @@ body {
   font-size: 11px;
   line-height: 11px;
   margin: 10px 0 30px;
-  padding: 0 0 0 5px;
+  padding: 10px 0 0 5px;
   text-align: right;
+}
+
+.validate {
+  float: left; padding-top: 10px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
